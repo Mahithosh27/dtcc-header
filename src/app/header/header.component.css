@@ -1,0 +1,267 @@
+/* Base styles */
+.home-child {
+    position: absolute;
+    top: 104px;
+    left: 0;
+    background-color: #0e5447;
+    width: 100%; 
+    height: 80px;
+}
+
+.home-fx {
+    position: absolute;
+    top: 221px;
+    left: 37px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.dtcc-logo-1-icon {
+    position: absolute;
+    top: 36px;
+    left: 37px;
+    width: 134px;
+    height: 31px;
+    overflow: hidden;
+}
+
+.user-cicrle-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 60px;
+    bottom: 0.2px;
+}
+
+.user1 {
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.user-cicrle-parent {
+    position: absolute;
+    top: 30px;
+    right: 30px; 
+    width: 118px;
+    height: 43px;
+}
+
+.pair {
+    position: absolute;
+    top: 132px;
+    left: 43px;
+    color: #fff;
+}
+
+.group-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    width: 90px;
+    height: 20px;
+}
+
+.usd-inr {
+    position: absolute;
+    left: 7px;
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 20px;
+}
+
+.usd-inrccy {
+    position: absolute;
+    left: 11px;
+    top: 3px;
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 20px;
+}
+
+.expand-down-light-icon {
+    position: absolute;
+    top: 6.32px;
+    left: 75px;
+    width: 10px;
+    height: 7.4px;
+}
+
+.rectangle-parent {
+    position: absolute;
+    top: 135px;
+    left: 99px;
+    width: 90px;
+    height: 20px;
+    font-size: 10px;
+}
+
+.account {
+    position: absolute;
+    top: 133px;
+    left: 418px;
+    color: #fff;
+}
+
+.group-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1px;
+    background-color: #fff;
+    width: 165px;
+    height: 24px;
+}
+
+.account1 {
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    display: flex;
+    align-items: center;
+    width: 64px;
+    height: 12px;
+}
+
+.rectangle-group {
+    position: absolute;
+    top: 133px;
+    left: 525px;
+    width: 165px;
+    height: 24px;
+    font-size: 14px;
+}
+
+.type {
+    position: absolute;
+    top: 132px;
+    left: 224px;
+    color: #fff;
+}
+
+.rectangle-container {
+    position: absolute;
+    top: 135px;
+    left: 293px;
+    width: 90px;
+    height: 20px;
+    font-size: 10px;
+}
+
+.load-circle-icon {
+    position: absolute;
+    top: 136px;
+    left: 668px;
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+}
+
+.date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 40px;
+}
+
+.june-2024 {
+    position: absolute;
+    top: 0;
+    left: 42px;
+    display: flex;
+    align-items: center;
+    width: 85px;
+}
+
+.date-parent {
+    position: absolute;
+    top: 209px;
+    right: 30px;
+    width: 127px;
+    height: 16px;
+    font-size: 13px;
+}
+
+.home {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 982px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 20px;
+    color: #000;
+    font-family: Montserrat;
+}
+
+
+@media (max-width: 900px) {
+    .home-child {
+        top: 60px; 
+        height: 60px; 
+    }
+
+    .home-fx {
+        top: 150px;
+        left: 20px;
+    }
+
+    .dtcc-logo-1-icon {
+        top: 20px; 
+        left: 20px; 
+    }
+
+    .user-cicrle-parent {
+        top: 20px; 
+        right: 20px; 
+    }
+
+    .pair {
+        top: 100px; 
+        left: 20px; 
+    }
+
+    .rectangle-parent {
+        top: 100px; 
+        left: 70px; 
+    }
+
+    .account {
+        top: 100px; 
+        left: 300px; 
+    }
+
+    .rectangle-group {
+        top: 100px; 
+        left: 400px; 
+    }
+
+    .type {
+        top: 100px; 
+        left: 150px; 
+    }
+
+    .rectangle-container {
+        top: 100px; 
+        left: 200px; 
+    }
+
+    .load-circle-icon {
+        top: 100px; 
+        left: 500px; 
+    }
+
+    .date-parent {
+        top: 150px; 
+        right: 20px; 
+    }
+
+    .home {
+        height: auto; 
+    }
+}
