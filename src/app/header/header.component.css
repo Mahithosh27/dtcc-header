@@ -1,4 +1,4 @@
-/* Base styles */
+/* Base styles1 */
 .home-child {
     position: absolute;
     top: 104px;
@@ -264,4 +264,5 @@
     .home {
         height: auto; 
     }
+  
 }
