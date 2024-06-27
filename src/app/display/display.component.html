@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="rates">
+    <div class="rate-box buy">
+      <div class="rate-content">
+        <div class="rate-arrow">&#8593;</div>
+        <div class="rate-value1">1.06</div>
+        <div class="rate-number">95695</div>
+        <div class="bank-label">BANK 1</div>
+        <div class="rate-label">BUY</div>
+      </div>
+    </div>
+    <div class="rate-box sell">
+      <div class="rate-content">
+        <div class="rate-arrow">&#8593;</div>
+        <div class="rate-value1">1.06</div>
+        <div class="rate-number">96365</div>
+        <div class="bank-label">BANK 1</div>
+        <div class="rate-label">SELL</div>
+      </div>
+    </div>
+  </div>
+  <div class="centered-text">
+    <div class="currency-label">EUR</div>
+    <div class="rate-value">0.670</div>
+  </div>
+  <div class="input-section">
+    <div class="buttons">
+      <button class="buy-button">BUY</button>
+      <button class="swap-button">&#8596;</button>
+      <button class="sell-button">SELL</button>
+      <button class="swap-button">&#8596;</button>
+    </div>
+    <input type="text" placeholder="Enter the quantity..." [(ngModel)]="quantity">
+    <select class="quantity-button" [(ngModel)]="selectedQuantity">
+      <option value="1M">1M</option>
+      <option value="2M">2M</option>
+      <option value="5M">5M</option>
+    </select>
+  </div>
+</div>

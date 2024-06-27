@@ -1,52 +1,35 @@
-<body>
-  	
-    <div class="home">
-          <div class="home-child">
-          </div>
-          <div class="home-fx">Home &gt; FX Dashboard </div>
-          <img class="dtcc-logo-1-icon" alt="" src="/assets/dtcc_logo 1.png">
-          
-          <div class="user-cicrle-parent">
-                <img class="user-cicrle-icon" alt="" src="/assets/User_cicrle.png">
-                
-                <b class="user1">User1</b>
-          </div>
-          <b class="pair">Pair :</b>
-          <div class="rectangle-parent">
-                <div class="group-child">
-                </div>
-                <select class="usd-inr" name="pair">
-            <option value="USD-INR">USD-INR</option>
-            <option value="EUR-USD">EUR-USD</option>
-            <option value="GBP-USD">GBP-USD</option>
-            
-          </select>
-          </div>
-          <b class="account">Pairs Type :</b>
-          <div class="rectangle-group">
-            <select class="usd-inrccy" name="pair">
-                  <option value="USD-INR">Major</option>
-                  <option value="EUR-USD">Minor</option>
-                  
-                </select>
-                
-          </div>
-          <b class="type">Type :</b>
-          <div class="rectangle-container">
-                <div class="group-child">
-                </div>
-           <select class="usd-inr" name="type">
-            <option value="Spot">Spot</option>
-            <option value="Forward">Forward</option>
-            <option value="Swap">Swap</option>
-          </select>
-          </div>
-          
-          
-          <div class="date-parent">
-                <b class="date">Date: </b>
-                <div class="june-2024">18 June 2024</div>
-          </div>
+<div class="home">
+      <div class="home-child"></div>
+      <div class="home-fx">Home &gt; FX Dashboard</div>
+      <img class="dtcc-logo-1-icon" alt="" src="assets/dtcc_logo 1.png">
+      
+      <div class="user-cicrle-parent">
+        <img class="user-cicrle-icon" alt="" src="assets/User_cicrle.png">
+        <b class="user1">{{ userName }}</b>
+      </div>
+      <b class="pair">Pair :</b>
+      <div class="rectangle-parent">
+        <div class="group-child"></div>
+        <select class="usd-inr" [(ngModel)]="selectedPair" name="pair">
+          <option *ngFor="let pair of pairs" [value]="pair.value">{{ pair.label }}</option>
+        </select>
+      </div>
+      <b class="account">Pairs Type :</b>
+      <div class="rectangle-group">
+        <select class="usd-inrccy" [(ngModel)]="selectedPairType" name="pairType">
+          <option *ngFor="let pairType of pairTypes" [value]="pairType.value">{{ pairType.label }}</option>
+        </select>
+      </div>
+      <b class="type">Type :</b>
+      <div class="rectangle-container">
+        <div class="group-child"></div>
+        <select class="usd-inr" [(ngModel)]="selectedType" name="type">
+          <option *ngFor="let type of types" [value]="type">{{ type }}</option>
+        </select>
+      </div>
+      <div class="date-parent">
+        <b class="date">Date: </b>
+        <div class="june-2024">{{ currentDate }}</div>
+      </div>
     </div>
     
-</body>

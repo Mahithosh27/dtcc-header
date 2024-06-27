@@ -1,0 +1,130 @@
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.rates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f5f1;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.rate-box {
+  width: 200px;
+  padding: 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.buy {
+  background-color: #f0c674;
+  width: 180px;
+  height: 100px;
+}
+
+.sell {
+  background-color: #aad6c3;
+  width: 180px;
+  height: 100px;
+}
+
+.rate-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rate-arrow {
+  position: absolute;
+  right: 10px;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.rate-value, .rate-number {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.bank-label {
+  position: absolute;
+  left: 5px;
+  bottom: 0px;
+  margin: 5px 0;
+}
+
+.rate-label {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.centered-text {
+  margin: 20px 0;
+}
+
+.currency-label, .rate-value {
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0 10px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  
+ 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.swap-button {
+  background-color: #ccc;
+}
+
+.quantity-button {
+  background-color: #ffcccc;
+  position: absolute;
+  color: #000;
+  width: 50px;
+  bottom: -70px;
+  height: 30px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+.rate-value1{
+  position: absolute;
+  left: 25px;
+  bottom: 95px;
+}

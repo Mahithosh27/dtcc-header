@@ -6,16 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  pairs = ['USD-INR', 'EUR-USD', 'GBP-USD'];
-  types = ['Spot', 'Forward'];
-  accounts = ['Account1', 'Account2', 'Account3'];
-  selectedPair = 'USD-INR';
-  selectedType = 'Spot';
-  selectedAccount = 'Account1';
-  date = new Date();
+  userName: string = 'User1';
+  selectedPair: string = 'USD-INR';
+  selectedPairType: string = 'Major';
+  selectedType: string = 'Spot';
+  currentDate: string = '18 June 2024';
 
-  updateDate(event: any) {
-    this.date = event.target.value;
-  }
+  pairs = [
+    { value: 'USD-INR', label: 'USD-INR' },
+    { value: 'EUR-USD', label: 'EUR-USD' },
+    { value: 'GBP-USD', label: 'GBP-USD' }
+  ];
+
+  pairTypes = [
+    { value: 'Major', label: 'Major' },
+    { value: 'Minor', label: 'Minor' }
+  ];
+
+  types = ['Spot', 'Forward', 'Swap'];
 }
+
 
