@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./display.component.css']
 })
 export class DisplayComponent {
-  quantity!: string; 
+  quantity: string=""; 
   selectedQuantity: string = '1M';
 }

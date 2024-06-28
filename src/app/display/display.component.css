@@ -124,7 +124,21 @@ input[type="text"] {
   width: 200px;
 }
 .rate-value1{
+  
   position: absolute;
   left: 25px;
   bottom: 95px;
+}
+
+.swap-button{
+  width: 1px;
+  height: 33px;
+  background-image: url('/assets/sort-arrow@2x.png'); 
+ 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+
+  text-align: center; 
 }

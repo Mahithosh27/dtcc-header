@@ -19,6 +19,7 @@ export class HeaderComponent {
   ];
 
   pairTypes = [
+    
     { value: 'Major', label: 'Major' },
     { value: 'Minor', label: 'Minor' }
   ];
