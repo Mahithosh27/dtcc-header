@@ -1,42 +1,57 @@
-<div class="container">
-  <div class="rates">
-    <div class="rate-box buy">
-      <div class="rate-content">
-        <div class="rate-arrow">&#8593;</div>
-        <div class="rate-value1">1.06</div>
-        <div class="rate-number">95695</div>
-        <div class="bank-label">BANK 1</div>
-        <div class="rate-label">BUY</div>
+<div class="container text-center">
+  <div class="row justify-content-center rates">
+    <div class="col-md-4 mb-3">
+      <div class="card rate-box buy">
+        <div class="card-body rate-content">
+          <div class="rate-arrow">&#8593;</div>
+          <div class="rate-value1">1.06</div>
+          <div class="rate-number">95695</div>
+          <div class="bank-label">BANK 1</div>
+          <div class="rate-label">BUY</div>
+        </div>
       </div>
     </div>
-    <div class="rate-box sell">
-      <div class="rate-content">
-        <div class="rate-arrow">&#8593;</div>
-        <div class="rate-value1">1.06</div>
-        <div class="rate-number">96365</div>
-        <div class="bank-label">BANK 1</div>
-        <div class="rate-label">SELL</div>
+    <div class="col-md-4 mb-3">
+      <div class="card rate-box sell">
+        <div class="card-body rate-content">
+          <div class="rate-arrow">&#8593;</div>
+          <div class="rate-value1">1.06</div>
+          <div class="rate-number">96365</div>
+          <div class="bank-label">BANK 1</div>
+          <div class="rate-label">SELL</div>
+        </div>
       </div>
     </div>
+    <div class="centered-text mb-4">
+      <span class="currency-label">EUR</span>
+      <span class="rate-value">0.670</span>
+    </div>
   </div>
-  <div class="centered-text">
-    <div class="currency-label">EUR</div>
-    <div class="rate-value">0.670</div>
-  </div>
+  
   <div class="input-section">
-    <div class="buttons">
-      <button class="buy-button">BUY</button>
-      <button class="swap-button"></button>
-      <button class="sell-button">SELL</button>
-      <button class="currency-button">EUR</button>
-      <button class="swap-button"></button>
-      <button class="currency-button">USD</button>
+    <div class="d-flex justify-content-center align-items-center mb-3">
+      <button class="btn custom-buy-button mx-2">BUY</button>
+      <button type="button" class="btn custom-buy-button1" onclick="handleButtonClick()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+        </svg>
+      </button>      
+      <button class="btn custom-sell-button mx-2">SELL</button>
+      <button class="btn custom-currency-button mx-2">EUR</button>
+      <button type="button" class="btn custom-buy-button1" onclick="handleButtonClick()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+        </svg>
+      </button>      
+      <button class="btn custom-currency-button mx-2">USD</button>
     </div>
-    <input type="text" placeholder="Enter the quantity..." [(ngModel)]="quantity">
-    <select class="quantity-button" [(ngModel)]="selectedQuantity">
-      <option value="1M">1M</option>
-      <option value="2M">2M</option>
-      <option value="5M">5M</option>
-    </select>
+    <div class="d-flex align-items-center justify-content-center">
+      <input type="text" class="form-control me-2" placeholder="Enter the quantity..." [(ngModel)]="quantity">
+      <select class="form-select quantity-button" [(ngModel)]="selectedQuantity">
+        <option value="1M">1M</option>
+        <option value="2M">2M</option>
+        <option value="5M">5M</option>
+      </select>
+    </div>
   </div>
 </div>
